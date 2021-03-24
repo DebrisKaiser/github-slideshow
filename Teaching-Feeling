@@ -1,0 +1,445 @@
+// 奴隶少女希尔薇先行版1.0.0 
+// 
+
+//  *本游戏由DebrisKaiser(Reinhardt)制作。 
+//   灵感来源于Bilibili老九； 
+//  《Teaching Feeling -奴隶との生活》； 
+//  《奈的调教日记》 
+//   渣作还望轻喷。 
+//   如有任何问题随时可以联系微信 
+//   小生不才，只是灵感颇多。 
+//   最后 ，感谢所以游玩本游戏的人，您们的支持是我最大的动力！ 
+//   如需更多游戏创作，请欢迎联系我，但说无妨。 
+
+
+#include<iostream> 
+#include<iomanip>
+#include<ctime>
+#include<vector>
+#include<array>
+#include<string>
+#include<cstdlib>
+#include <fstream>
+using namespace std;
+
+void begining(){int enter;
+	cout<<"今天太阳刚刚升起的时候..."<<endl;
+	system("pause");
+	cout<<"我听到了沉稳的敲门声..." <<endl;
+	system("pause");
+	cout<<"今天并没有邀请谁的预定"<<endl;
+	system("pause");
+	cout<<"我也没有能够不打招呼就前来拜访的熟人.."<<endl;
+	system("pause");
+	cout<<"（究竟是谁呢？）"<<endl;
+	system("pause"); 
+	cout<<"可疑的男人:您好医生。"<<endl; 
+    system("pause"); 
+    cout<<"打开门就遇到一个形迹可疑的男人出现在我的面前。"<<endl;
+    system("pause"); 
+    cout<<"可疑的男人:您还记得我吗？"<<endl;
+	system("pause"); 
+	cout<<"可疑的男人:我曾经被您救过一命"<<endl;
+	system("pause"); 
+	cout<<"我把男人的脸和我的记忆进行对照.."<<endl;
+	system("pause");
+	cout<<"听他这么说还真觉得有点眼熟。"<<endl;
+	system("pause");
+	cout<<"可疑的男人:没错，上次我倒在这座城镇郊外时就是医生您帮助的我呢。"<<endl;
+	system("pause");
+	cout<<"可疑的男人:原因是因为一些不好的纠葛呢.."<<endl;
+	system("pause");
+	cout<<"可疑的男人:不知道是否因为您身为医生的秉性使然。。"<<endl;
+	system("pause");
+	cout<<"可疑的男人:暂且不说这个，那时未能好好感谢您就离开了，我感到十分抱歉。" <<endl;
+	system("pause");
+	cout<<"可疑的男人:因为偶尔路过这附近的城市，所以今天特地来向您道谢。"<<endl;
+	system("pause");
+	cout<<"(虽然这个男人有些可疑但似乎是专程来道谢，先给他泡茶吧...)"<<endl;
+	system("pause");
+	cout<<"可疑的男人:不用，我没打算长时间呆在这里，不必那么客气。请您先收下这个.."<<endl;
+	system("pause");
+	cout<<"可疑的男人:因为那时候没带钱，没能付医疗费."<<endl;
+	system("pause");
+	cout<<"(男人从怀里拿出了一个信封交给这边)"<<endl;
+	system("pause");
+	cout<<"(检查后发现里面装着相对于医疗费数量稍多的金钱)"<<endl;
+	cout<<"*获得金钱2000。"<<endl; 
+	system("pause");
+	cout<<"可疑的男人:这是拖了这么久才支付费用的赔罪，请一定要毫不客气地收下它。"<<endl;
+	system("pause");
+	cout<<"可疑的男人:我还带来了一样其他的东西，之后的谈话内容您能保密可以吗。"<<endl;
+	system("pause");
+	cout<<"可疑的男人:...不愧是您，果然善解人意。"<<endl;
+	system("pause");
+	cout<<"(男人的身后出现一个少女的身姿)"<<endl;
+	system("pause"); 
+	cout<<"可疑的男人:最近有一个资本家因为事故去世了。"<<endl;
+	system("pause"); 
+	cout<<"可疑的男人:因为没有近亲，所以一些自称是政府亲戚友人之流就把他的财产瓜分了。"<<endl;
+	system("pause");
+	cout<<"可疑的男人:我也因此得到了一些他们挑剩下的东西。"<<endl;
+	system("pause");
+	cout<<"可疑的男人:呃，这个女孩也就是其中之一"<<endl;
+	system("pause");
+	cout<<"可疑的男人:因为我是一个穷商人.."<<endl;
+	system("pause");
+	cout<<"可疑的男人:因为用的东西“什么都卖”，所以生意一直挺顺的。"<<endl;
+	system("pause");
+	cout<<"可疑的男人:人身买卖什么的，如果是青壮年还好说，但这样的小鬼的话恐怕就无法找到可以信赖的买家。"<<endl;
+	cout<<"可疑的男人:我也不可能随便的处理掉或是丢掉。"<<endl;
+	system("pause");
+	cout<<"可疑的男人:我也是有良知和怜悯的。"<<endl;
+	system("pause");
+	cout<<"可疑的男人:在我经过这个城市的时候，正好想起了当初救助过我的您。"<<endl;
+	system("pause");
+	cout<<"可疑的男人:因为看起来医生您也是一个人在生活。"<<endl;
+	system("pause");
+	cout<<"可疑的男人:可能我多管闲事了，但您多少还是会有寂寞吧？"<<endl;
+	cout<<"可疑的男人:要不要收留这个小家伙呢？"<<endl;
+	system("pause");
+	cout<<"(怎么办呢？)"<<endl;
+	cout<<"请选择：1.接受      2.拒绝"<<endl;
+	cin>>enter;
+	if(enter==2) {
+		cout<<"这样啊...这么突然的事情，也是没有办法的..."<<endl;
+		system("pause");
+		cout<<"谢谢您的时间"<<endl;
+		exit (0);
+	}
+	}
+
+int main()
+{
+	cout<<"**************************************************"<<endl; 
+	cout<<"*               -Teaching Feeling-               *"<<endl;           
+	cout<<"*                                                *"<<endl;
+	cout<<"*                 奴隶少女希尔薇                 *"<<endl;
+	cout<<"*                                                *"<<endl;
+	cout<<"*                  Tap to start                  *"<<endl;
+	cout<<"*                                                *"<<endl;
+    cout<<"**************************************************"<<endl;
+	
+	//1.set your name
+	string player_name;
+	//2.set Schilvel's name
+	string Schilvel_name;
+	//set the initial information
+	int birth_month;
+	int birth_date;
+	int choice,temp1,temp2,temp3;
+	int gold=2000;
+	int day_count=1;                        //initialized the variable. 
+	
+	
+	string basic_info[5]={"亲密度"," 智力"," 魅力"," 道德","好感度"}; 
+	int basic_infos[5]={0,10,0,0,0};
+	//5 basic info: Intimacy, wisdom, attractiveness, morality, Degree of goodwill.
+	string constell_names[12][2]={
+	    {"山羊座","水瓶座"},
+		{"水瓶座","双鱼座"},
+		{"双鱼座","白羊座"},
+		{"白羊座","金牛座"},
+		{"金牛座","双子座"}, 
+		{"双子座","巨蟹座"}, 
+		{"巨蟹座","狮子座"}, 
+		{"狮子座","处女座"}, 
+		{"处女座","天秤座"}, 
+		{"天秤座","天蝎座"},
+		{"天蝎座","射手座"},
+		{"射手座","山羊座"} 
+	};
+	//constell list
+	begining();
+	cout<<"Please tell me your name ：";
+	cin>> player_name;
+	cout<<"enter the birthday of Schilvel:"<<endl;
+	cout<<"month: ";
+	cin>>birth_month;
+	cout<<"date: ";
+	cin>>birth_date; 
+	
+	int constell_dates[]={20,19,21,20,21,22,23,23,23,24,23,22};
+	
+	cout<<"Schilvel's constell is:";
+	cout<<constell_names[birth_month-1][birth_date/constell_dates[birth_month-1]]<<endl<<endl;//cout constell
+	
+	
+	while(1){
+		cout<<"\n1: 希尔薇的状态\n2: 行动\n3: 摸摸头\n4: 与希尔薇谈话\n5: 存档\n6: 读档\n7: 退出游戏"<<endl; 
+		cin>>choice;
+		switch(choice){
+			case 1:{
+			cout<<"basic info:"<<endl;
+	        for(int i=0;i<5;i++){
+		    cout<<basic_info[i]<<":"<<basic_infos[i];
+	            for(int j=0;j<20;j++)
+	                if(j<(basic_infos[i]/10))
+		        cout<<"■";
+	                else
+	                cout<<"□";
+	                cout<<endl;
+		    }
+			    cout<<"当前金钱: " <<gold<<"。"<<endl;
+				cout<<"今天是和希尔薇共同生活的第"<<day_count<<"天"<<endl; 
+	        if(basic_infos[4]<=40){
+	        	cout<<"希尔薇仍把您当陌生人看待。"<<endl; 
+			}
+			if(basic_infos[4]>40&&basic_infos[4]<=100){
+				cout<<"希尔薇把您当成同居的人并信任着"<<endl; 
+			}
+			if(basic_infos[4]>100&&basic_infos[4]<=300){
+				cout<<"希尔薇非常信任您并把您当成家人看待"<<endl; 
+			}
+			if(basic_infos[4]>300){
+				cout<<"希尔薇深爱着您。"<<endl; 
+			}
+			
+			break;
+			} 
+			case 2:{
+				cout<<"请选择行动:"<<endl;
+				for(int i=0;i<3;i++){
+				cout<<"1.上私塾  2.学习礼法  3.给希尔薇买衣服  4.打工赚钱";
+				cout<<"  :";
+				srand(time(NULL));
+				cin>>choice;
+				if(choice==1){
+					if(gold<150) {
+							cout<<"金钱不足！请先进行打工。" <<endl;
+					    	break;
+						}
+					basic_infos[1]+=temp1=rand()%11;
+					basic_infos[3]+=temp2=rand()%11;
+					gold-=temp3=rand()%150;
+					cout<<"磨刀不误砍柴工，读完初中再打工！"<<endl;
+					cout<<"智力+"<<temp1<<",道德+"<<temp2<<",花费金钱 "<< temp3<<endl;
+				    }
+				if(choice==2) {
+					if(gold<150) {
+							cout<<"金钱不足！请先进行打工。" <<endl;
+					    	break;
+						}
+				    basic_infos[2]+=temp1=rand()%11;
+					basic_infos[3]+=temp2=rand()%11;
+					gold-=temp3=rand()%150;
+					cout<<"虽有至道，弗学，不知其善也。"<<endl;
+					cout<<"魅力+"<<temp1<<",道德+"<<temp2<<",花费金钱："<< temp3<<endl;	
+				}
+				if(choice==3){
+				    cout<<"呀嘞呀嘞，顾客是上帝，快请快请。" <<endl;
+				    system("pause");
+				    cout<<"请问客人需要挑选什么样的衣服呢？" <<endl;
+					cout<<"1.淑雅的礼服$200  2.连衣裙$150  3.和服$160"<<endl;
+					cin>>temp1;
+					if(temp1==1){
+					    if(gold<200) {
+					    	cout<<"金钱不足！请先进行打工。" <<endl;
+					    	break;
+						}
+						gold-=200;
+						basic_infos[4]+=temp1=10;
+						basic_infos[0]+=temp2=5; 
+						cout<<"(“淑雅的礼服”已购买)"<<endl;
+						system("pause");
+						cout<<"希尔薇：这是...买给我的衣服吗？主人您太好了，谢谢主人！"<<endl;
+						system("pause");
+						cout<<"好感度增加" <<temp1<<"。"<<endl;
+						cout<<"亲密度增加" <<temp2<<"。"<<endl;
+						
+					}
+					if(temp1==2){
+						if(gold<150) {
+							cout<<"金钱不足！请先进行打工。" <<endl;
+					    	break;
+						}
+						gold-=150;
+						basic_infos[4]+=temp1=8;
+						basic_infos[0]+=temp2=4; 
+						cout<<"(“连衣裙”已购买)"<<endl;
+						system("pause");
+						cout<<"希尔薇：这是...买给我的衣服吗？主人您太好了，谢谢主人！"<<endl;
+						system("pause");
+						cout<<"好感度增加" <<temp1<<"。"<<endl;
+						cout<<"亲密度增加" <<temp2<<"。"<<endl;
+					}	
+					if(temp1==3){
+						if(gold<160) {
+							cout<<"金钱不足！请先进行打工。" <<endl;
+					    	break;
+						}
+						gold-=160;
+						basic_infos[4]+=temp1=8;
+						basic_infos[0]+=temp2=4;
+						cout<<"(“和服”已购买)"<<endl;
+						system("pause");
+						cout<<"希尔薇：这是...买给我的衣服吗？主人您太好了，谢谢主人！"<<endl;
+						system("pause");
+						cout<<"好感度增加" <<temp1<<"。"<<endl;
+						cout<<"亲密度增加" <<temp2<<"。"<<endl;
+						
+					}	 
+				}
+				if(choice==4) {
+					gold+=temp1=rand()%200;
+					cout<<"不打工，怎有钱？"<<endl;
+					cout<<"获得金钱：" <<temp1<<endl; 
+				} 
+				
+			}
+			day_count++;
+		    break;
+	
+        }
+        case 3:{ 
+        	if(basic_infos[4]<=40){
+        		cout<<"希尔薇: ..."<<endl;
+        		system("pause");
+        		cout<<"希尔薇:(疑惑)...这有什么特殊含义吗？"<<endl;
+        		system("pause");
+        		cout<<"希尔薇:(疑惑)...这样让您很高兴吗？"<<endl;
+        		system("pause");
+        		cout<<"希尔薇:呼.."<<endl;
+        		system("pause");
+        		cout<<"希尔薇:我...不是很懂呢.."<<endl;
+        		system("pause");
+        		cout<<"希尔薇:请自便吧。"<<endl;
+				basic_infos[4]+=temp1=rand()%3;
+				cout<<"好感度增加"<<temp1<<"。" <<endl;
+				
+				} 
+        	if(basic_infos[4]>40&&basic_infos[4]<=100){
+        		cout<<"希尔薇:这样的话，让您很高兴吗？"<<endl;
+        		system("pause");
+        		cout<<"希尔薇:我也..渐渐能适应了呢。"<<endl;
+        		system("pause");
+        		cout<<"希尔薇:请您随意。"<<endl;
+        		system("pause");
+        		cout<<"希尔薇:呼.."<<endl;
+        		system("pause");
+        		cout<<"希尔薇:主人的抚摸，让我不再那么害怕了。"<<endl;
+        		basic_infos[4]+=temp2=2;
+        		basic_infos[0]+=temp3=rand()%5;
+        		cout<<"好感度增加"<<temp2<<"。" <<endl;
+        		cout<<"亲密度增加"<<temp3<<"。" <<endl;
+        		
+        		} 
+        		
+			if(basic_infos[4]>100){
+        		cout<<"希尔薇:主人的手，真温暖..."<<endl;
+        		system("pause");
+        		cout<<"希尔薇:您能一直抚摸下去吗？"<<endl;
+        		system("pause");
+        		cout<<"希尔薇:主人的手，是带给我幸福的手。"<<endl;
+        		system("pause");
+        		cout<<"希尔薇:呼.."<<endl;
+        		system("pause");
+        		cout<<"希尔薇:请您能一直抚摸下去吗？"<<endl;
+				basic_infos[4]+=temp3=4;
+				basic_infos[0]+=temp2=4;
+				cout<<"好感度增加"<<temp3<<"。" <<endl;
+				cout<<"亲密度增加"<<temp2<<"。" <<endl;	
+			}
+			break;
+		}
+		case 4:{
+			if(basic_infos[4]<=40){
+				cout<<"希尔薇：..."<<endl;
+				system("pause");
+				cout<<"(他似乎一直沉默着...)"<<endl;
+				system("pause");
+				cout<<"希尔薇：...嗯？"<<endl;
+				system("pause");
+				cout<<"希尔薇：您是说这个伤痕吗？这是之前的主人为了愉悦而用鞭子抽打的..."<<endl;
+				system("pause");
+				cout<<"希尔薇：还望您...能手下留情.."<<endl;
+				system("pause");
+				cout<<"(少女似乎露出了忧伤的表情)"<<endl;
+				system("pause");
+				basic_infos[4]+=temp1=1;
+				cout<<"好感度增加"<<temp1<<"。" <<endl;
+			}
+			if(basic_infos[4]>40&&basic_infos[4]<=100){
+				cout<<"希尔薇：..."<<endl;
+				system("pause");
+				cout<<"(希尔薇微笑着看着你)"<<endl;
+				system("pause");
+				cout<<"希尔薇：...嗯？"<<endl;
+				system("pause");
+				cout<<"希尔薇：主人能给我提供温暖的食物和床铺，真是好呢。"<<endl;
+				system("pause");
+				cout<<"希尔薇：主人您是医生吗？"<<endl;
+				system("pause");
+				cout<<"(少女似乎露出了忧伤的表情)"<<endl;
+				system("pause");
+				cout<<"希尔薇：不过似乎也不能使我曾经的伤疤复原..."<<endl;
+				system("pause");
+				cout<<"希尔薇：不过,希尔薇还是会帮助主人的！"<<endl;
+				system("pause");
+				basic_infos[4]+=temp2=2;
+				basic_infos[0]+=temp3=2;
+				cout<<"好感度增加"<<temp2<<"。" <<endl;
+				cout<<"亲密度增加"<<temp3<<"。" <<endl;
+			}
+			if(basic_infos[4]>100){
+				cout<<"希尔薇：..."<<endl;
+				system("pause");
+				cout<<"主人想和我说话吗？希尔薇很乐意！"<<endl;
+				system("pause");
+				cout<<"希尔薇：...嗯？"<<endl;
+				system("pause");
+				cout<<"希尔薇：主人的工作，希尔薇似乎也能帮上忙呢"<<endl;
+				system("pause");
+				cout<<"希尔薇：主人的手，真温暖..."<<endl;
+				system("pause");
+				cout<<"(少女露出了灿烂的笑容)"<<endl;
+				system("pause");
+				cout<<"希尔薇：能遇到主人，真幸福。"<<endl;
+				system("pause");
+				cout<<"希尔薇：真希望一直这样下去..."<<endl; 
+				system("pause");
+				basic_infos[4]+=temp2=3;
+				basic_infos[0]+=temp3=3;
+				cout<<"好感度增加"<<temp2<<"。" <<endl;
+				cout<<"亲密度增加"<<temp3<<"。" <<endl;
+			}
+			break;
+		}
+		case 5:{
+			cout<<"正在存档，请稍后..."<<endl;
+			system("pause");
+			ofstream out("data_load.txt");//read the main 
+        for(int i=0;i<5;i++){
+	 
+	 	out<<basic_infos[i]<<" ";		
+	}
+	    out<<gold<<" ";
+	    out<<day_count;
+	    cout<<"存档成功！"<<endl;
+			break;
+		} 
+		case 6:{
+			cout<<"正在读档，请稍后..."<<endl;
+			system("pause");
+            ifstream in("data_load.txt");//read the main 
+        for(int i=0;i<5;i++){
+	 
+	 	in>>basic_infos[i];
+			
+	}
+	    in>>gold;
+	    in>>day_count;
+	        cout<<"读档成功！"<<endl;
+			break;
+		}
+		case 7:{
+            cout<<"退出成功。"<<endl; 
+			return 0;
+		}
+		
+    }
+        
+	
+}
+return 0;
+}
